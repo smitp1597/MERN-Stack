@@ -10,7 +10,7 @@ app.use(express.json());
 
 const conn = "mongodb+srv://smitp1597:smit01051997@nodejs.kjau2.mongodb.net/MERN-exercise?retryWrites=true&w=majority";
 mongoose.connect(conn, {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true})
-.then((result) => app.listen(3000, () => {console.log('Server is running on port: 3000');}))
+.then((result) => app.listen(5000, () => {console.log('Server is running on port: 5000');}))
 .catch((err) => console.log(err));
 
 const exercisesRouter = require('./routes/exercises');
